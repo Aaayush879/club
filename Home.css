@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0%;
+    box-sizing: border-box;
+    
+
+}
+
+.container-fluid{
+    width:90%;
+    margin:auto;
+}
+.table-responsive{
+    max-height:500px;
+    
+}
+.tr:hover{
+    background-color:aliceblue
+}
+.th{
+    position:relative;
+}
+.table th{
+    padding:0.75rem;
+    vertical-align: top;
+    position:relative;
+    border-top:none;
+    
+    color:black;
+}
+td:hover::after,
+th:hover::after {
+    content: " ";
+    position:absolute;
+    background-color: aliceblue;
+    left:0;
+    top:-5000px;
+    height:5000px;
+    width:100%;
+    z-index:-1;
+    cursor:pointer
+}
+
+.thead-dark{
+    font-weight:bold;
+    text-transform: uppercase;
+    background-color: black;
+}
